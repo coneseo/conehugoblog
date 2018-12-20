@@ -1,5 +1,5 @@
 # Site settings
-baseurl = ""
+baseurl = "https://coneseo.github.io/conehugoblog/"
 themesDir = "themes"
 publishDir = "docs"
 languageCode = "en-us"
