@@ -1,7 +1,6 @@
----
-author : me
-title : Java Examples
----
++++
+title = "javaExample"
++++
 
 ```
 public class Bus{

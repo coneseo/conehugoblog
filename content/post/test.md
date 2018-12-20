@@ -1,6 +1,5 @@
 +++
-title : test
-author : me
+title = "test"
 +++
 
 # hello!

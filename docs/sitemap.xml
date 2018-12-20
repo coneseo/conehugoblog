@@ -3,18 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://coneseo.github.io/conehugoblog/post/test/</loc>
-    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://coneseo.github.io/conehugoblog/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://coneseo.github.io/conehugoblog/post/</loc>
-    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -24,9 +18,16 @@
   </url>
   
   <url>
+    <loc>https://coneseo.github.io/conehugoblog/post/javaexample1/</loc>
+  </url>
+  
+  <url>
     <loc>https://coneseo.github.io/conehugoblog/</loc>
-    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coneseo.github.io/conehugoblog/post/test/</loc>
   </url>
   
 </urlset>
