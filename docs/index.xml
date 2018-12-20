@@ -6,9 +6,20 @@
     <description>Recent content on one&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 20 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://coneseo.github.io/conehugoblog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://coneseo.github.io/conehugoblog/post/test/</link>
+      <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://coneseo.github.io/conehugoblog/post/test/</guid>
+      <description>#java source files
+public class Car{ private String name; private String number; private String color; }  </description>
+    </item>
     
   </channel>
 </rss>
