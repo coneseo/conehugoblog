@@ -16,7 +16,26 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://coneseo.github.io/conehugoblog/post/javaexample1/</guid>
-      <description>public class Bus{ private String name; private String color; }  Plese do something! I really want to use this themes!</description>
+      <description>public class Bus{ private String name; private String color; }  function sayHello(name,age){
+console.log(“Hello!”,name,“you have”, age);
+}
+sayHello(“scw”, 20);
+argument(인자)를 추가해서 외부에서 입력된 값을 콘솔에 출력하는 함수를 처음으로 짜보았다.
+function sayHello(name,age){
+console.log(“Hello!”+name+“you are”+age);
+}
+sayHello(“scw”, 20);
+function sayHello(name,age){
+console.log(Hello ${name} you are ${age} years old);
+}
+sayHello(“scw”, 20);
+-&amp;gt; 백틱을 사용해서 표현하였다.
+/*function sayHello(name,age){
+return Hello ${name} you are ${age} years old;
+}
+const greetNicolas = sayHello(“Nicolas”,14)
+console.log(greetNicolas)
+*/</description>
     </item>
     
     <item>
