@@ -1,16 +1,8 @@
----
-author: gogo
-date: 2018-12-20
-linktitle: Creating a New Theme
-title: Creating a New Theme
----
++++
+title : test
+author : me
++++
 
-#java source files
+# hello!
 
-```
-public class Car{
-  private String name;
-  private String number;
-  private String color;
-}
-```
+gogogogoogogogogogo
