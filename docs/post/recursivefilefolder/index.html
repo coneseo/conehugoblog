@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="coneseo">
+<meta name="description" content="This is my blog">
+<meta name="generator" content="Hugo 0.52" />
+<title>recusiveFileFolder</title>
+<link rel="shortcut icon" href="https://coneseo.github.io/conehugoblog/images/favicon.ico">
+<link rel="stylesheet" href="https://coneseo.github.io/conehugoblog/css/style.css">
+<link rel="stylesheet" href="https://coneseo.github.io/conehugoblog/css/highlight.css">
+
+
+
+<link rel="stylesheet" href="https://coneseo.github.io/conehugoblog/css/monosocialiconsfont.css">
+
+
+
+<link href="https://coneseo.github.io/conehugoblog/index.xml" rel="alternate" type="application/rss+xml" title="one&#39;s blog" />
+
+
+<meta property="og:title" content="recusiveFileFolder" />
+<meta property="og:description" content="package my.examples.ioexam; import java.io.File; import java.io.FileInputStream; public class IOexam01 { public static void main(String[] args) { //윈도우 사용자 c:\tmp 폴더를 만든다. 맥 사용자는 \tmp 폴더를 사용한다. // 임의의 폴더를 만들고, 그 안에 몇가지 폴더를 만든다. //내 문서에 examples 만들었다. C:\Users\woon4\Documents\examplefolder\com\examples //1.위의 폴더가 있는지 없는지 검사한다. 있으면 있다. 없으면 없다고 출력 //2.해당경로가 파일인지, 폴더인지를 검사한다. 파일이면 파일, 폴더면 폴더로 출력 //3.해당 경로에 어떤 파일과 폴더들이 있는지 정보를 출력 //4. IOExam02를 만들고, PATH를 지정하면 폴더일 경우, 해당 폴더 아래의 모든 파일과 폴더정보를 출력하도록 한다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://coneseo.github.io/conehugoblog/post/recursivefilefolder/" />
+
+
+
+<meta itemprop="name" content="recusiveFileFolder">
+<meta itemprop="description" content="package my.examples.ioexam; import java.io.File; import java.io.FileInputStream; public class IOexam01 { public static void main(String[] args) { //윈도우 사용자 c:\tmp 폴더를 만든다. 맥 사용자는 \tmp 폴더를 사용한다. // 임의의 폴더를 만들고, 그 안에 몇가지 폴더를 만든다. //내 문서에 examples 만들었다. C:\Users\woon4\Documents\examplefolder\com\examples //1.위의 폴더가 있는지 없는지 검사한다. 있으면 있다. 없으면 없다고 출력 //2.해당경로가 파일인지, 폴더인지를 검사한다. 파일이면 파일, 폴더면 폴더로 출력 //3.해당 경로에 어떤 파일과 폴더들이 있는지 정보를 출력 //4. IOExam02를 만들고, PATH를 지정하면 폴더일 경우, 해당 폴더 아래의 모든 파일과 폴더정보를 출력하도록 한다.">
+
+
+
+<meta itemprop="wordCount" content="206">
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="recusiveFileFolder"/>
+<meta name="twitter:description" content="package my.examples.ioexam; import java.io.File; import java.io.FileInputStream; public class IOexam01 { public static void main(String[] args) { //윈도우 사용자 c:\tmp 폴더를 만든다. 맥 사용자는 \tmp 폴더를 사용한다. // 임의의 폴더를 만들고, 그 안에 몇가지 폴더를 만든다. //내 문서에 examples 만들었다. C:\Users\woon4\Documents\examplefolder\com\examples //1.위의 폴더가 있는지 없는지 검사한다. 있으면 있다. 없으면 없다고 출력 //2.해당경로가 파일인지, 폴더인지를 검사한다. 파일이면 파일, 폴더면 폴더로 출력 //3.해당 경로에 어떤 파일과 폴더들이 있는지 정보를 출력 //4. IOExam02를 만들고, PATH를 지정하면 폴더일 경우, 해당 폴더 아래의 모든 파일과 폴더정보를 출력하도록 한다."/>
+<meta name="twitter:site" content="@https://www.twitter.com/"/>
+
+
+    </head>
+<body>
+    <nav class="main-nav">
+	
+		<a href='https://coneseo.github.io/conehugoblog/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+
+	
+		<a class="cta" href="https://coneseo.github.io/conehugoblog/index.xml">Subscribe</a>
+	
+</nav>
+
+    <section id="wrapper">
+        
+        
+<article class="post">
+    <header>
+        <h1>recusiveFileFolder</h1>
+        <h2 class="subtitle"></h2>
+        <h2 class="headline">
+        January 1, 0001
+        <br>
+        
+        </h2>
+    </header>
+    <section id="post-body">
+        <pre><code>package my.examples.ioexam;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+public class IOexam01 {
+    public static void main(String[] args) {
+        //윈도우 사용자 c:\tmp 폴더를 만든다. 맥 사용자는 \tmp 폴더를 사용한다.
+        // 임의의 폴더를 만들고, 그 안에 몇가지 폴더를 만든다.
+        //내 문서에 examples 만들었다. C:\Users\woon4\Documents\examplefolder\com\examples
+        //1.위의 폴더가 있는지 없는지 검사한다. 있으면 있다. 없으면 없다고 출력
+        //2.해당경로가 파일인지, 폴더인지를 검사한다. 파일이면 파일, 폴더면 폴더로 출력
+        //3.해당 경로에 어떤 파일과 폴더들이 있는지 정보를 출력
+        //4. IOExam02를 만들고, PATH를 지정하면 폴더일 경우, 해당 폴더 아래의 모든 파일과 폴더정보를 출력하도록 한다. (재귀호출)
+
+        File file = new File(&quot;C:\\Users\\woon4\\Documents\\examplefolder\\com\\examples&quot;);
+
+        if(file.exists()){
+            System.out.println(file.getName() + &quot;이 있습니다.&quot;);
+            if(file.isDirectory()){
+                System.out.println(&quot;directory입니다.&quot;);
+                File[] files = file.listFiles();
+                for(File f : files){
+                    System.out.println(f.getName() +&quot; &quot;+(f.isDirectory() ?  &quot;[DIR]&quot; : &quot;[FILE]&quot;+ f.length()));
+                }
+            }
+        }else{
+            System.out.println(&quot;없습니다.&quot;);
+        }
+
+//        if(file.isFile()){
+//            System.out.println(&quot;file 입니다.&quot;);
+//        }else if(file.isDirectory()){
+//            System.out.println(&quot;folder 입니다.&quot;);
+//        }
+    }
+}
+</code></pre>
+
+<pre><code>package my.examples.ioexam;
+
+import java.io.File;
+
+public class IOexam02 {
+    public static void main(String[] args){
+        File file = new File(&quot;C:\\Users\\woon4\\Documents\\examplefolder\\com\\examples&quot;);
+        if(file.exists()){
+            if(file.isFile()){
+                printFile(&quot;&quot;,file);
+            }else{
+                printDir(&quot;&quot;, file);
+            }
+        }
+
+    }
+
+    public static void printFile(String space, File file){
+        System.out.println(space + file.getName());
+    }
+
+    public static void printDir(String space, File file){
+        System.out.println(space + file.getName() + &quot;[DIR]&quot;);
+        space = space + &quot;  &quot;;
+        File[] files = file.listFiles();
+        for(File f : files){
+            if(f.isFile()){
+                printFile(space, f);
+            }else if(f.isDirectory()){
+                printDir(space, f);
+            }
+        }
+    }
+}
+</code></pre>
+
+    </section>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    <a href="https://twitter.com/Your%20Twitter%20account">
+    <img class="avatar" src="https://coneseo.github.io/conehugoblog/images/avatar.png">
+    <div>
+        <span class="dark">coneseo</span>
+        <span>I&#39;m an blogger.</span>
+    </div>
+    </a>
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fconeseo.github.io%2fconehugoblog%2fpost%2frecursivefilefolder%2f - recusiveFileFolder by @Your%20Twitter%20account"><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+    </section>
+</footer>
+
+
+
+<ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+        <li>
+            <a href="/conehugoblog/post/javaexample1/">javaExample<aside class="dates">Jan 1 0001</aside></a>
+        </li>
+    
+        <li>
+            <a href="/conehugoblog/post/test/">test<aside class="dates">Jan 1 0001</aside></a>
+        </li>
+    
+</ul>
+
+
+
+        <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.dribbble.com/">
+        circledribble
+    </a>
+    
+    <a class="symbol" href="https://www.facebook.com/">
+        circlefacebook
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/">
+        circlegithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/">
+        circletwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2018 coneseo
+    
+    </p>
+</footer>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://coneseo.github.io/conehugoblog/js/main.js"></script>
+<script src="https://coneseo.github.io/conehugoblog/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+</body>
+</html>
