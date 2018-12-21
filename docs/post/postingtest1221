@@ -1,0 +1,21 @@
++++
+title = "posting test"
++++
+
+```
+public class Post{
+  public static void main(String[] args){
+    System.out.println("good moring!";)
+  }
+}
+Hello.java가 있는 곳에서 실행.
+javac -d /tmp Hello.java
+
+/tmp/my/examples/first/Hello.class
+
+만약 CLASSPATH가 . 이라고 되어있다면 /tmp폴더에서 아래와 같이 실행
+
+CLASSPATH가 /tmp라고 되어 있으면 어디서든 아래와 같이 실행
+java my.examples.first.Hello
+
+```
