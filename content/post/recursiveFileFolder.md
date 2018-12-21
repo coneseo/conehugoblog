@@ -1,7 +1,7 @@
-+++
-title = "recusiveFileFolder"
-date = "20181221"
-+++
+---
+title : "recusiveFileFolder"
+date : "2018-12-21"
+---
 
 ```
 package my.examples.ioexam;
